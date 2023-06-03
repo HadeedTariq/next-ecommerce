@@ -1,9 +1,9 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
-    './pages/**/*.{js,ts,jsx,tsx,mdx}',
-    './components/**/*.{js,ts,jsx,tsx,mdx}',
-    './app/**/*.{js,ts,jsx,tsx,mdx}',
+    "./app/**/*.{js,ts,jsx,tsx,mdx}",
+    "./pages/**/*.{js,ts,jsx,tsx,mdx}",
+    "./components/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
     extend: {
@@ -12,7 +12,19 @@ module.exports = {
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
+      spacing:{
+        '80vh':"80vh",
+        '85vh':"85vh",
+        '90vh':"90vh",
+        "74":"18.5rem",
+        "1/7":"60%"
+      },
     },
+    fontFamily:{
+     anton:['var(--font-anton)'],
+     alkatra:['var(--font-alkatra)'],
+     kanit:['var(--font-kanit)'],
+    }
   },
   plugins: [],
 }
