@@ -24,6 +24,11 @@ module.exports = {
      anton:['var(--font-anton)'],
      alkatra:['var(--font-alkatra)'],
      kanit:['var(--font-kanit)'],
+    },
+    screens:{
+      'tablet':'828px',
+      'lg':'1024px',
+      'md':"829px"
     }
   },
   plugins: [],

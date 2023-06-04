@@ -20,15 +20,15 @@ function Details(props) {
   }
   return (
     <>{imgUrl &&
-      <div className="flex w-full h-screen lg:h-90vh md:h-90vh sm:90vh py-44 justify-around items-center">
+      <div className="flex w-full h-fit py-2 lg:h-90vh md:h-90vh max-[828px]:flex-col max-[828px]:min-h-min justify-around items-center">
         <Image
           src={imgUrl}
           width={300}
           height={120}
-          className="h-74 object-fill"
+          className="h-74 object-contain"
           alt={productName}
         />
-        <div className="flex flex-col w-1/7">
+        <div className="flex flex-col w-1/2 max-[828px]:w-3/4">
           <h3 className="font-alkatra text-3xl my-3 text-red-600">{productName}</h3>
           <h3 className="font-anton text-xl my-2 text-emerald-400 font-thin">{shortDesc}</h3>
           <div className="flex justify-around my-2">
